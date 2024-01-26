@@ -1,0 +1,5 @@
+[
+    { "name": "Tour Eiffel", "location": "Champ de Mars, 5 Avenue Anatole France, 75007 Paris", "history": "Construite en 1889...", "long" : "2.294464", "lat" : "48.858353" },
+    { "name": "Louvre", "location": "Rue de Rivoli, 75001 Paris", "history": "Ancien palais royal..." , "long" : "2.294464", "lat" : "48.858353"  },
+    { "name": "Notre-Dame", "location": "6 Parvis Notre-Dame - Pl. Jean-Paul II, 75004 Paris", "history": "Cathédrale gothique..." , "long" : "2.294464", "lat" : "48.858353"  }
+]

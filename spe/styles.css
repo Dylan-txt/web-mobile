@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#monument-details {
+    margin-top: 20px;
+}
+.login-button {
+    display: inline-block;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    float: center;
+}
+
+.login-button:hover {
+    background-color: #45a049;
+}
+.logout-button {
+    display: inline-block;
+    padding: 10px;
+    background-color: #ff4f4f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    float: center;
+}
+
+.logout-button:hover {
+    background-color: #ff3333;
+}
+
