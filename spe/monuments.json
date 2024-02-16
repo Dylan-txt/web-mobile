@@ -1,5 +1,82 @@
 [
-    { "name": "Tour Eiffel", "location": "Champ de Mars, 5 Avenue Anatole France, 75007 Paris", "history": "Construite en 1889...", "long" : "2.294464", "lat" : "48.858353" },
-    { "name": "Louvre", "location": "Rue de Rivoli, 75001 Paris", "history": "Ancien palais royal..." , "long" : "2.294464", "lat" : "48.858353"  },
-    { "name": "Notre-Dame", "location": "6 Parvis Notre-Dame - Pl. Jean-Paul II, 75004 Paris", "history": "Cathédrale gothique..." , "long" : "2.294464", "lat" : "48.858353"  }
+    {
+        "name": "Tour Eiffel",
+        "location": "Champ de Mars, 5 Avenue Anatole France, 75007 Paris",
+        "history": "La Tour Eiffel a été construite en 1889...",
+        "image": "tour_eiffel.jpg",
+        "lat": 48.858844,
+        "long": 2.294350
+    },
+    {
+        "name": "Louvre",
+        "location": "Rue de Rivoli, 75001 Paris",
+        "history": "Le Louvre est l'un des plus grands musées du monde...",
+        "image": "louvre.jpg",
+        "lat": 48.860611,
+        "long": 2.337643
+    },
+    {
+        "name": "Notre-Dame",
+        "location": "6 Parvis Notre-Dame - Pl. Jean-Paul II, 75004 Paris",
+        "history": "Notre-Dame est une célèbre cathédrale gothique...",
+        "image": "notre_dame.jpg",
+        "lat": 48.8530,
+        "long": 2.3499
+    },
+    {
+        "name": "Musée d'Orsay",
+        "location": "1 Rue de la Légion d'Honneur, 75007 Paris",
+        "history": "Le Musée d'Orsay abrite une importante collection d'art impressionniste...",
+        "image": "musee_orsay.jpg",
+        "lat": 48.859961,
+        "long": 2.326647
+    },
+    {
+        "name": "Arc de Triomphe",
+        "location": "Place Charles de Gaulle, 75008 Paris",
+        "history": "L'Arc de Triomphe a été construit pour célébrer les victoires militaires de Napoléon...",
+        "image": "arc_de_triomphe.jpg",
+        "lat": 48.8738,
+        "long": 2.2950
+    },
+    {
+        "name": "Montmartre",
+        "location": "18e arrondissement, Paris",
+        "history": "Montmartre est célèbre pour la Basilique du Sacré-Cœur et son ambiance artistique...",
+        "image": "montmartre.jpg",
+        "lat": 48.8867,
+        "long": 2.3431
+    },
+    {
+        "name": "Sainte-Chapelle",
+        "location": "8 Boulevard du Palais, 75001 Paris",
+        "history": "La Sainte-Chapelle est une chapelle gothique située sur l'île de la Cité...",
+        "image": "sainte_chapelle.jpg",
+        "lat": 48.8556,
+        "long": 2.3458
+    },
+    {
+        "name": "Panthéon",
+        "location": "Place du Panthéon, 75005 Paris",
+        "history": "Le Panthéon est un monument laïque contenant les restes de personnalités illustres...",
+        "image": "pantheon.jpg",
+        "lat": 48.8462,
+        "long": 2.3465
+    },
+    {
+        "name": "Jardin des Tuileries",
+        "location": "Rue de Rivoli, 75001 Paris",
+        "history": "Les Jardins des Tuileries sont des jardins à la française entourant le Palais du Louvre...",
+        "image": "tuileries.jpg",
+        "lat": 48.8635,
+        "long": 2.3276
+    },
+    {
+        "name": "Musée Rodin",
+        "location": "79 Rue de Varenne, 75007 Paris",
+        "history": "Le Musée Rodin est consacré à l'œuvre du sculpteur Auguste Rodin...",
+        "image": "musee_rodin.jpg",
+        "lat": 48.8556,
+        "long": 2.3124
+    }
 ]

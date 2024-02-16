@@ -59,3 +59,28 @@ li {
     background-color: #ff3333;
 }
 
+.custom-popup {
+    max-width: 200px;
+    text-align: center;
+}
+
+.popup-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 5px;
+}
+
+.popup-close {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+    color: #666;
+}
+
+.popup-close:hover {
+    color: #333;
+}
+
+
