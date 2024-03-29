@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Basilique Notre-Dame de Fourvière",
+        "location": "8 Place de Fourvière, 69005 Lyon",
+        "history": "La basilique Notre-Dame de Fourvière est un édifice religieux situé à Lyon, construit entre 1872 et 1884. Elle est située sur la colline de Fourvière, surplombant la ville de Lyon. La basilique est un symbole majeur de la ville et est souvent appelée la \"Vierge dorée\" en raison de la statue dorée de la Vierge Marie qui couronne son dôme.",
+        "image": "basilique_notre_dame_de_fourviere.jpg",
+        "lat": 45.7628,
+        "long": 4.8220
+    },
+    {
+        "name": "Vieux Lyon",
+        "location": "69005 Lyon",
+        "history": "Le Vieux Lyon est le quartier médiéval et renaissance de Lyon, situé sur la rive ouest de la Saône. Il est connu pour ses ruelles étroites, ses traboules (passages couverts) et ses bâtiments historiques bien préservés. Le Vieux Lyon est classé au patrimoine mondial de l'UNESCO depuis 1998.",
+        "image": "vieux_lyon.jpg",
+        "lat": 45.7621,
+        "long": 4.8277
+    },
+    {
+        "name": "Place Bellecour",
+        "location": "Place Bellecour, 69002 Lyon",
+        "history": "La place Bellecour est la plus grande place de Lyon et l'une des plus grandes places de France. Elle est située dans le 2e arrondissement de Lyon, entre la Saône et le Rhône. La place est bordée par des bâtiments historiques et est connue pour sa grande statue équestre du roi Louis XIV.",
+        "image": "place_bellecour.jpg",
+        "lat": 45.7573,
+        "long": 4.8320
+    }
+]

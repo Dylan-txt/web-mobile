@@ -1,7 +1,25 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // Récupérer la ville à partir de l'URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const ville = urlParams.get('ville');
+
     const monumentsList = document.getElementById("monuments-list");
     const monumentDetails = document.getElementById("monument-details");
-    const map = L.map('map').setView([48.8566, 2.3522], 12); // Coordonnées par défaut (Paris)
+    const backButton = document.getElementById("back-button");
+    const mapContainer = document.getElementById("map");
+    let map = null;
+
+    switch (ville) {
+        case 'paris':
+            map = L.map('map').setView([48.8566, 2.3522], 12); // Coordonnées par défaut (Paris)
+            break;
+        case 'marseille':
+            map = L.map('map').setView([43.299999, 5.4], 12); // Coordonnées Marseille
+            break;
+        case 'lyon':
+            map = L.map('map').setView([45.7640430, 4.8356590], 12); // Coordonnées Lyon
+            break;
+    }
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '© OpenStreetMap contributors'
@@ -9,9 +27,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const markers = [];
 
-    // Récupérer la ville à partir de l'URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const ville = urlParams.get('ville');
+let hideSide = document.getElementById("hideSidebar");
+let sideBar = document.getElementById("sidebar");
+hideSide.addEventListener("click", () => {
+  if(getComputedStyle(sideBar).display != "none"){
+    sideBar.style.display = "none";
+  } else {
+    sideBar.style.display = "block";
+  }
+})
 
     // Fonction pour récupérer et afficher les monuments en fonction de la ville sélectionnée
     function getMonumentsByVille(ville) {
@@ -20,11 +44,24 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(monuments => {
                 monuments.forEach((monument, index) => {
                     const listItem = document.createElement("li");
-                    listItem.textContent = monument.name;
+                    listItem.classList.add("monument-item");
+
+                    // Création de l'image miniature
+                    const image = document.createElement("img");
+                    image.src = `img/${monument.image}`;
+                    image.alt = monument.name;
+                    image.classList.add("monument-image");
+
+                    // Création du titre
+                    const title = document.createElement("span");
+                    title.textContent = monument.name;
+                    title.classList.add("monument-title");
                     listItem.addEventListener("click", () => {
                         displayMonumentDetails(monument);
                         showMonumentOnMap(monument);
                     });
+                    listItem.appendChild(image);
+                    listItem.appendChild(title);
                     monumentsList.appendChild(listItem);
                 });
             })
@@ -48,10 +85,14 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
     }
 
+
     function showMonumentOnMap(monument) {
         // On enlève les anciens marqueurs
         markers.forEach(marker => marker.remove());
         markers.length = 0;
+
+        // Créer un contenu pour le popup avec les détails du monument
+        map.setView([monument.lat, monument.long], 13);
 
         const marker = L.marker([monument.lat, monument.long], 12).addTo(map);
 
@@ -60,7 +101,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 <b>${monument.name}</b>
                 <br>${monument.location}
                 <br><img src="img/${monument.image}" alt="${monument.name}" class="popup-image">
-                <br><span id="close-popup" class="popup-close">&#10006;</span>
             </div>
         `;
 
@@ -68,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Ajuster la vue de la carte pour que le popup s'affiche en entier
         const popupLatLng = marker.getLatLng();
-        const popupSize = L.point(200, 160); // Ajustez la taille du popup en fonction de vos besoins
+        const popupSize = L.point(140, 112); // Ajustez la taille du popup
         const popupAnchor = marker.getPopup().options.anchor;
 
         const topLeft = map.layerPointToLatLng(popupLatLng, map.zoom).add(L.point(-popupAnchor[0], -popupAnchor[1]));
@@ -85,3 +125,4 @@ document.addEventListener("DOMContentLoaded", function () {
         markers.push(marker);
     }
 });
+

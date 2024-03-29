@@ -12,10 +12,11 @@
     <?php 
     include_once('header/header.php');
     ?>
-    <h1>Menu Principal</h1>
 </header>
 
 <main>
+<h1>Menu Principal</h1>
+
     <h2>Choisissez une ville :</h2>
     <ul>
         <li><a href="monuments.php?ville=paris">Paris</a></li>
