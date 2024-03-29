@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Basilique Notre-Dame de la Garde",
+        "location": "Rue Fort du Sanctuaire, 13281 Marseille",
+        "history": "La basilique Notre-Dame de la Garde est un édifice religieux catholique situé à Marseille, en France. Cette basilique, construite par l'architecte Henri-Jacques Espérandieu dans le style néo-byzantin, est située au sommet de la colline Notre-Dame de la Garde, à 162 mètres d'altitude. Elle est un des symboles de la ville de Marseille et est surnommée « la Bonne Mère ».",
+        "image": "basilique_notre_dame_de_la_garde.jpg",
+        "lat": 43.2869,
+        "long": 5.3715
+    },
+    {
+        "name": "Vieux-Port de Marseille",
+        "location": "Quai des Belges, 13001 Marseille",
+        "history": "Le Vieux-Port est un port naturel situé à Marseille, en France, face à la mer Méditerranée, à l'embouchure du canal de Marseille. Il est entièrement artificiel. C'est le port le plus ancien de la ville, utilisé depuis l'Antiquité. De nos jours, il est principalement utilisé par des bateaux de pêche, des navires de plaisance et des ferries.",
+        "image": "vieux_port_de_marseille.jpg",
+        "lat": 43.2950,
+        "long": 5.3736
+    },
+    {
+        "name": "Palais Longchamp",
+        "location": "Boulevard du Jardin Zoologique, 13004 Marseille",
+        "history": "Le palais Longchamp est un monument de Marseille construit entre 1862 et 1869 sur les plans de l'architecte Henry Espérandieu pour abriter les réservoirs et les machines destinés à alimenter en eau la ville de Marseille depuis la Durance par le canal de Marseille.",
+        "image": "palais_longchamp.jpg",
+        "lat": 43.3011,
+        "long": 5.3965
+    }
+]

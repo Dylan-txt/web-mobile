@@ -62,6 +62,7 @@ li {
 .custom-popup {
     max-width: 200px;
     text-align: center;
+    padding: 10px;
 }
 
 .popup-image {
@@ -82,5 +83,3 @@ li {
 .popup-close:hover {
     color: #333;
 }
-
-
