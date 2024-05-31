@@ -1,0 +1,15 @@
+{
+    "welcome": "Welcome",
+    "menu": "Menu",
+    "login": "Login",
+    "logout": "Logout",
+    "details": "Details",
+    "location": "Location",
+    "history": "History",
+    "price": "Price",
+    "open": "Schedules",
+    "home": "Home",
+    "monument_details": "Monument Details",
+    "monument_location": "Location:",
+    "monument_history": "History:"
+}

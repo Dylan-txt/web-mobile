@@ -2,81 +2,131 @@
     {
         "name": "Tour Eiffel",
         "location": "Champ de Mars, 5 Avenue Anatole France, 75007 Paris",
-        "history": "La Tour Eiffel a été construite en 1889...",
+        "history": {
+            "fr": "La Tour Eiffel a été construite en 1889...",
+            "en": "The Eiffel Tower was built in 1889..."
+        },
         "image": "tour_eiffel.jpg",
         "lat": 48.858844,
-        "long": 2.294350
+        "long": 2.294350,
+        "prix": "25€",
+        "horaires": "09:00 - 00:00"
     },
     {
         "name": "Louvre",
         "location": "Rue de Rivoli, 75001 Paris",
-        "history": "Le Louvre est l'un des plus grands musées du monde...",
+        "history": {
+            "fr": "Le Louvre est l'un des plus grands musées du monde...",
+            "en": "The Louvre is one of the largest museums in the world..."
+        },
         "image": "louvre.jpg",
         "lat": 48.860611,
-        "long": 2.337643
+        "long": 2.337643,
+        "prix": "17€",
+        "horaires": "09:00 - 18:00"
     },
     {
         "name": "Notre-Dame",
         "location": "6 Parvis Notre-Dame - Pl. Jean-Paul II, 75004 Paris",
-        "history": "Notre-Dame est une célèbre cathédrale gothique...",
+        "history": {
+            "fr": "Notre-Dame est une célèbre cathédrale gothique...",
+            "en": "Notre-Dame is a famous Gothic cathedral..."
+        },
         "image": "notre_dame.jpg",
         "lat": 48.8530,
-        "long": 2.3499
+        "long": 2.3499,
+        "prix": "Gratuit",
+        "horaires": "08:00 - 18:45"
     },
     {
         "name": "Musée d'Orsay",
         "location": "1 Rue de la Légion d'Honneur, 75007 Paris",
-        "history": "Le Musée d'Orsay abrite une importante collection d'art impressionniste...",
+        "history": {
+            "fr": "Le Musée d'Orsay abrite une importante collection d'art impressionniste...",
+            "en": "The Musée d'Orsay houses an important collection of Impressionist art..."
+        },
         "image": "musee_orsay.jpg",
         "lat": 48.859961,
-        "long": 2.326647
+        "long": 2.326647,
+        "prix": "14€",
+        "horaires": "09:30 - 18:00"
     },
     {
         "name": "Arc de Triomphe",
         "location": "Place Charles de Gaulle, 75008 Paris",
-        "history": "L'Arc de Triomphe a été construit pour célébrer les victoires militaires de Napoléon...",
+        "history": {
+            "fr": "L'Arc de Triomphe a été construit pour célébrer les victoires militaires de Napoléon...",
+            "en": "The Arc de Triomphe was built to celebrate Napoleon's military victories..."
+        },
         "image": "arc_de_triomphe.jpg",
         "lat": 48.8738,
-        "long": 2.2950
+        "long": 2.2950,
+        "prix": "13€",
+        "horaires": "10:00 - 22:30"
     },
     {
         "name": "Montmartre",
         "location": "18e arrondissement, Paris",
-        "history": "Montmartre est célèbre pour la Basilique du Sacré-Cœur et son ambiance artistique...",
+        "history": {
+            "fr": "Montmartre est célèbre pour la Basilique du Sacré-Cœur et son ambiance artistique...",
+            "en": "Montmartre is famous for the Basilica of the Sacred Heart and its artistic atmosphere..."
+        },
         "image": "montmartre.jpg",
         "lat": 48.8867,
-        "long": 2.3431
+        "long": 2.3431,
+        "prix": "Gratuit",
+        "horaires": "06:00 - 22:30"
     },
     {
         "name": "Sainte-Chapelle",
         "location": "8 Boulevard du Palais, 75001 Paris",
-        "history": "La Sainte-Chapelle est une chapelle gothique située sur l'île de la Cité...",
+        "history": {
+            "fr": "La Sainte-Chapelle est une chapelle gothique située sur l'île de la Cité...",
+            "en": "The Sainte-Chapelle is a Gothic chapel located on the Île de la Cité..."
+        },
         "image": "sainte_chapelle.jpg",
         "lat": 48.8556,
-        "long": 2.3458
+        "long": 2.3458,
+        "prix": "10€",
+        "horaires": "09:00 - 17:00"
     },
     {
         "name": "Panthéon",
         "location": "Place du Panthéon, 75005 Paris",
-        "history": "Le Panthéon est un monument laïque contenant les restes de personnalités illustres...",
+        "history": {
+            "fr": "Le Panthéon est un monument laïque contenant les restes de personnalités illustres...",
+            "en": "The Panthéon is a secular monument containing the remains of illustrious figures..."
+        },
         "image": "pantheon.jpg",
         "lat": 48.8462,
-        "long": 2.3465
+        "long": 2.3465,
+        "prix": "11,50€",
+        "horaires": "10:00 - 18:00"
     },
     {
         "name": "Jardin des Tuileries",
         "location": "Rue de Rivoli, 75001 Paris",
-        "history": "Les Jardins des Tuileries sont des jardins à la française entourant le Palais du Louvre...",
+        "history": {
+            "fr": "Les Jardins des Tuileries sont des jardins à la française entourant le Palais du Louvre...",
+            "en": "The Tuileries Gardens are French formal gardens surrounding the Louvre Palace..."
+        },
         "image": "tuileries.jpg",
         "lat": 48.8635,
-        "long": 2.3276
+        "long": 2.3276,
+        "prix": "Gratuit",
+        "horaires": "07:00 - 21:00"
     },
     {
         "name": "Musée Rodin",
         "location": "79 Rue de Varenne, 75007 Paris",
-        "history": "Le Musée Rodin est consacré à l'œuvre du sculpteur Auguste Rodin...",
+        "history": {
+            "fr": "Le Musée Rodin est consacré à l'œuvre du sculpteur Auguste Rodin...",
+            "en": "The Rodin Museum is dedicated to the work of the sculptor Auguste Rodin..."
+        },
         "image": "musee_rodin.jpg",
         "lat": 48.8556,
-        "long": 2.3124
+        "long": 2.3124,
+        "prix": "13€",
+        "horaires": "10:00 - 18:30"
     }
 ]

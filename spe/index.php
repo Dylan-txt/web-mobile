@@ -32,7 +32,7 @@
 			<div class="slide" data-current>
 				<div class="slide__inner">
 					<div class="slide--image__wrapper">
-                        <a href="monuments.php?ville=paris">
+                        <a href="monuments.php?ville=paris&lang=fr">
 						<img class="slide--image" src="img/Paris.jpg" alt="Image 1" />
                         </a>
 					</div>
@@ -44,7 +44,7 @@
 			<div class="slide" data-next>
 				<div class="slide__inner">
 					<div class="slide--image__wrapper">
-                    <a href="monuments.php?ville=marseille">
+                    <a href="monuments.php?ville=marseille&lang=fr">
 						<img class="slide--image" src="img/Marseille.jpg" alt="Image 1" />
                     </a>
 					</div>
@@ -56,7 +56,7 @@
 			<div class="slide" data-previous>
 				<div class="slide__inner">
 					<div class="slide--image__wrapper">
-                    <a href="monuments.php?ville=lyon">
+                    <a href="monuments.php?ville=lyon&lang=fr">
 						<img class="slide--image" src="img/Lyon.jpg" alt="Image 1" />
                     </a>
 					</div>

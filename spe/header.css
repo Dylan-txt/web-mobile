@@ -1,0 +1,117 @@
+/* header.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #333; /* Couleur principale */
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #ff6600; /* Ligne orange pour délimiter le header */
+}
+
+header h4 {
+    margin: 0;
+    text-align: center;
+    flex: 1;
+    font-size: 24px;
+}
+
+header .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login-button,
+.logout-button,
+.back-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 0 5px;
+    font-size: 16px;
+}
+
+.login-button:hover,
+.logout-button:hover,
+.back-button:hover {
+    background-color: #ff6600; /* Couleur secondaire */
+    color: #fff;
+}
+
+.back-button i,
+.login-button i,
+.logout-button i {
+    margin-right: 5px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 767px) {
+    header {
+        flex-direction: column;
+    }
+
+    header h4 {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    header .buttons {
+        justify-content: center;
+    }
+
+    .login-button,
+    .logout-button,
+    .back-button {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        margin-bottom: 5px;
+    }
+
+    .back-button,
+    .login-button,
+    .logout-button {
+        width: auto; /* Assure que le bouton reste petit */
+        padding: 5px 10px; /* Ajustez la taille du padding si nécessaire */
+        font-size: 14px; /* Ajustez la taille de la police si nécessaire */
+    }
+
+    .back-button i,
+    .login-button i,
+    .logout-button i {
+        margin-right: 0; /* Supprime l'espacement entre l'icône et le texte */
+    }
+}
+.language-select {
+    display: flex;
+    gap: 10px;
+}
+
+.language-icon {
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.language-icon:hover {
+    transform: scale(1.1);
+}
+
