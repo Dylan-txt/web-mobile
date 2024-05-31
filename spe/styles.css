@@ -112,8 +112,9 @@ body {
     margin: 0;
     padding: 0;
 }
+
 main {
-    width: 70%;
+    /* width: 70%; */
     margin: auto;
 }
 
@@ -154,13 +155,16 @@ main {
     right: 0px;
     width: min-content;
     height: 100%;
-    background : unset;
-    overflow-y:auto;
-    overflow-x:hidden;
-    z-index: 1; /* Place le panneau latéral au-dessus de la carte */
+    background: unset;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1;
+    /* Place le panneau latéral au-dessus de la carte */
 }
-#sidebar::-webkit-scrollbar
-{ width: 0 !important }
+
+#sidebar::-webkit-scrollbar {
+    width: 0 !important
+}
 
 ul {
     list-style-type: none;
@@ -183,6 +187,7 @@ li {
 .back-button:hover {
     background-color: #ddd;
 }
+
 .login-button {
     display: inline-block;
     padding: 10px;
@@ -197,6 +202,7 @@ li {
 .login-button:hover {
     background-color: #45a049;
 }
+
 .logout-button {
     display: inline-block;
     padding: 10px;
@@ -216,13 +222,14 @@ li {
 .custom-popup {
     max-width: 140px;
     text-align: center;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 .popup-image {
     max-width: 100%;
     height: auto;
     margin-top: 5px;
+    min-width: 90px;
 }
 
 .popup-close {
@@ -237,6 +244,7 @@ li {
 .popup-close:hover {
     color: #333;
 }
+
 .back-button {
     display: inline-block;
     padding: 10px 20px;
@@ -253,10 +261,12 @@ li {
 .back-button:hover {
     background-color: #ddd;
 }
-header{
+
+header {
     display: flex;
     justify-content: center;
 }
+
 .monument-item {
     margin-bottom: 15px;
     cursor: pointer;
@@ -265,12 +275,14 @@ header{
     transition: 0.2s ease;
 
 }
+
 .monument-item:hover {
     opacity: 1;
 }
 
 .monument-image {
-    width: 120px; /* Taille de l'image miniature */
+    width: 120px;
+    /* Taille de l'image miniature */
     height: auto;
     margin-right: 10px;
     border-radius: 5px;
@@ -285,7 +297,8 @@ header{
     margin: 0;
     list-style: none;
 }
-.hideSide{
+
+.hideSide {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -296,5 +309,48 @@ header{
     margin-bottom: 10px;
 }
 
+.leaflet-container a.leaflet-popup-close-button {
+    color: white;
+}
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    background: #333;
+    color: #fff;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.4);
+}
 
+@media screen and (max-width: 767px) {
 
+    h4 {
+        font-size: 12px;
+    }
+
+    .monument-item {
+        display: block;
+    }
+
+    li {
+        margin-right: 3px;
+    }
+
+    .monument-image {
+        width: 88px;
+        margin-right: 0px;
+    }
+
+    #map {
+        height: 50vh;
+    }
+
+    .leaflet-container a.leaflet-popup-close-button {
+        font: 26px/30px Tahoma, Verdana, sans-serif;
+    }
+    main {
+        padding: 2px;
+    }
+    .leaflet-popup-content .custom-popup {
+        /* Définir la largeur et la hauteur du popup */
+        width: 110px; /* Ajustez la largeur selon vos besoins */
+        height: 88px; /* Ajustez la hauteur selon vos besoins */
+        /* Autres styles CSS */
+    }
+}
